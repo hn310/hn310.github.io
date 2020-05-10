@@ -1,0 +1,322 @@
+/**************************COMMON CSS**************************/
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*navbar css*/
+.navbar-light .navbar-nav .nav-link {
+    padding: 8px 16px;
+    color: #000;
+}
+
+/*not display border bottom on active menu & language select menu*/
+li:not(.active):not(:last-child)>.nav-link:hover {
+    color: #fc0a0a !important;
+    border-bottom: 2px solid #fc0a0a;
+}
+
+.nav-item.active {
+    border-left: 3px solid #fc0a0a;
+}
+
+.nav-item.active>.nav-link {
+    color: #fc0a0a !important;
+}
+
+@media (max-width: 767.98px) {
+
+    .nav-item,
+    .border-bottom-sm {
+        border-bottom: 1px solid #dedede;
+    }
+
+    .nav-link:hover {
+        color: #fc0a0a !important;
+        border-bottom: none;
+    }
+
+    .dropdown-menu {
+        border: none;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/*footer*/
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #6c757d;
+    padding-top: 0.3rem;
+    font-size: 80%;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+footer #mobile-sitemap {
+    text-decoration: underline;
+    font-size: 100%;
+    color: #007bff !important;
+}
+
+footer .fas {
+    color: #000 !important;
+}
+
+/*back to top button*/
+#button-top {
+    background-color: #dc3545;
+    width: 3rem;
+    height: 3rem;
+    text-align: center !important;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button-top:hover {
+    cursor: pointer;
+}
+
+#button-top.show {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+/**************************index.html CSS**************************/
+/*slider*/
+.carousel-img-imperfect {
+    background-image: url("../img/imperfect.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-img-service {
+    background-image: url("../img/service.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-img-talent {
+    background-image: url("../img/talent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#main-slider .carousel-item {
+    height: 28rem;
+    position: relative;
+}
+
+@media (max-width: 767.98px) {
+    .carousel-img-imperfect {
+        background-image: url("../img/imperfect-sm.jpg");
+    }
+}
+
+.dark-layer {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .display-3-md-block {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .text-md-nowrap {
+        white-space: nowrap !important;
+    }
+}
+
+/*center carousel caption*/
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+#service-overview .fas {
+    color: #fc0a0a;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*pr-video*/
+.pr-img-bg {
+    background-image: url("../img/pr-video-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 11rem;
+    position: relative;
+}
+
+.video-btn {
+    color: #fff;
+}
+
+.video-btn:hover {
+    color: #fc0a0a;
+}
+
+/*news*/
+.flex-hr {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*contact us*/
+.bg-gray-light {
+    background-color: #f2f2f2 !important;
+}
+
+.office-img {
+    background-image: url("../img/office/office-hn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    min-height: 25rem;
+}
+
+#contact .dark-layer {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .form-control:focus {
+    border-color: #fa9f9f;
+    box-shadow: 0 0 0 0.2rem rgba(255, 69, 69, 0.25);
+}
+
+.location-details .fas {
+    color: #fff;
+}
+
+.location-details a {
+    color: #00ad5f;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 380px) {
+    #contact h1 {
+        font-size: 2rem;
+    }
+
+    .location-details a {
+        font-size: 0.8rem;
+    }
+}
+
+/**************************about.html CSS**************************/
+#about-img {
+    background-image: url("../img/office/ksp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16rem;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    #collapse-header .category-text {
+        font-size: 1.5rem;
+    }
+}
+
+/*section-header*/
+.show-section {
+    cursor: pointer;
+    border-bottom: 2px solid #dc3545;
+    border-radius: 1rem 3rem;
+    padding: 1rem 0;
+}
+
+.show-section.active {
+    background: #dc3545;
+    color: #fff !important;
+}
+
+/*section-details*/
+#company-overview .card-body {
+    padding: 0;
+    padding-top: 1rem;
+}
+
+#company-overview .table th {
+    background-color: #f2f2f2;
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 767.98px) {
+    #company-overview .table th {
+        width: 30%;
+    }
+}
+
+#company-overview a[aria-expanded=true] .fa-caret-down,
+#company-location a[aria-expanded=true] .fa-caret-down {
+    display: none;
+}
+
+#company-overview a[aria-expanded=false] .fa-caret-up,
+#company-location a[aria-expanded=false] .fa-caret-up {
+    display: none;
+}
+
+#company-overview .company-detail-header,
+#company-location .company-detail-header {
+    font-size: 1.3rem;
+}
+
+#company-overview .card-header,
+#company-location .card-header {
+    background: #dc3545;
+    color: #fff;
+}
+
+/*company history css*/
+#company-history .table th {
+    width: 20%;
+}
+
+#company-history .table th,
+#company-history .table td {
+    font-size: 1.2rem;
+}
+
+/**************************concept.html CSS**************************/
+#concept-img {
+    background-image: url("../img/concept-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 16rem;
+    max-width: 100%;
+    position: relative;
+}
+
+#concept-img .dark-layer {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#luvina-way .go-global-img {
+    margin-top: -3rem;
+}
