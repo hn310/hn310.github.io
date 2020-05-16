@@ -42,6 +42,10 @@ li:not(.active):not(:last-child)>.nav-link:hover {
 }
 
 /*footer*/
+footer {
+    border-top: 1px solid rgba(255, 0, 0, 0.2);
+}
+
 footer a {
     display: block;
     text-decoration: none;
