@@ -324,3 +324,17 @@ footer .fas {
 #luvina-way .go-global-img {
     margin-top: -3rem;
 }
+
+/**************************service.html CSS**************************/
+#service-img {
+    background-image: url("../img/service.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    position: relative;
+}
+
+#process img:hover {
+    cursor: pointer;
+}

@@ -5,6 +5,12 @@ $('#main-slider').carousel({
     wrap: true
 });
 
+// set language flag
+$(".language-dropdown-item").click(function() {
+    var chosenLanguageFlag = $(this).children().attr('src');
+    $("#current-language").attr('src', chosenLanguageFlag);
+});
+
 
 // set company established year
 $("#company-year").text(getCompanyEstablisedYears());
