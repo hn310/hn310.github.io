@@ -338,3 +338,23 @@ footer .fas {
 #process img:hover {
     cursor: pointer;
 }
+
+#services .table td {
+    border: none;
+}
+
+#services .table th,
+#services .table td {
+    border-right: 2px solid #dee2e6;
+    border-left: 2px solid #dee2e6;
+}
+
+#services .table tr:last-child {
+    border-bottom: 2px solid #dee2e6;
+}
+
+@media (max-width: 767.98px) {
+    #services td li {
+        white-space: nowrap;
+    }
+}
