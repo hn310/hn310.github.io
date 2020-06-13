@@ -68,16 +68,20 @@ $('.show-section').click(function() {
     $(this).addClass("active");
 });
 
-// when re-click 会社概要 tab, show first collapse (本社)
+// when re-click 会社概要 tab, display all overviews
 $('#show-company-overview').click(showCompanyOverview);
 
 function showCompanyOverview() {
     $('#company-overview-collapse-1').addClass('collapse show');
+    $('#company-overview-collapse-2').addClass('collapse show');
+    $('#company-overview-collapse-3').addClass('collapse show');
 }
 
-// when re-click 事務所 tab, show first collapse (本社)
+// when re-click 事務所 tab, display all locations
 $('#show-company-location').click(showCompanyLocation);
 
 function showCompanyLocation() {
     $('#company-location-collapse-1').addClass('collapse show');
+    $('#company-location-collapse-2').addClass('collapse show');
+    $('#company-location-collapse-3').addClass('collapse show');
 }
